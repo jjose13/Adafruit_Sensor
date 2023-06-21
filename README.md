@@ -41,7 +41,7 @@ The following drivers are based on the Adafruit Unified Sensor Driver:
   - [Adafruit_BME280_Library](https://github.com/adafruit/Adafruit_BME280_Library/)
 
 **Orientation**
- - [Adafruit_BNO055](https://github.com/adafruit/Adafruit_BNO055)
+ - [Adafruit_BNO055][def]
 
 **All in one device**
 - [Adafruit_LSM9DS0](https://github.com/adafruit/Adafruit_LSM9DS0_Library) (accelerometer, gyroscope, magnetometer)
@@ -85,7 +85,8 @@ typedef enum
   SENSOR_TYPE_PM100_STD             = (25),
   SENSOR_TYPE_PM10_ENV              = (26),
   SENSOR_TYPE_PM25_ENV              = (27),
-  SENSOR_TYPE_PM100_ENV             = (28),
+  SENSOR_TYPE_PM100
+  _ENV             = (28),
   SENSOR_TYPE_GAS_RESISTANCE        = (29),
   SENSOR_TYPE_UNITLESS_PERCENT      = (30)
 } sensors_type_t;
@@ -266,3 +267,6 @@ Similarly, we can get the basic technical capabilities of this sensor with the f
  Serial.println("------------------------------------");
  Serial.println("");
 ```
+
+
+[def]: https://github.com/adafruit/Adafruit_BNO055
